@@ -1,12 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom'; // Importe useNavigate
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Remova o useNavigate
 import Contato from './Contato';
 
 const Home = () => {
-  const navigate = useNavigate(); // Renomeie handleNavigate para navigate
-
   const navigateToContato = () => {
-    navigate('/contato', { state: { objeto: "Rian Durigan" }, replace: true});
+    window.location.href = '/contato'; // Use window.location.href para navegar para '/contato'
   };
 
   return (
@@ -37,7 +35,7 @@ const App = () => {
           <Route path="/contato" element={<Contato />} />
         </Routes>
       </div>
-    </Router>
+    </Router>    
   );
 };
 

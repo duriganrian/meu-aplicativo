@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# instalar
+.npx create-react-app meu-aplicativo
+.cd meu-aplicativo
+.npm install
+.npm install react-router-dom

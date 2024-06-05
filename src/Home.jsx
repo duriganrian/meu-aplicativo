@@ -10,10 +10,16 @@ const Home = () => {
   };
 
   return (
-    <div className="home-container">
-      <h1 className="home-title">Página Inicial</h1>
-      <button className="home-button" onClick={navigateToContato}>Ir para Contato</button>
-      <Link to="/contato" className="home-link">Ir para Contato (Link)</Link>
+    <div>
+      <nav className="navbar">
+        <Link to="/">Home</Link>
+        <Link to="/contato">Contato</Link>
+      </nav>
+      <div className="home-container">
+        <h1 className="home-title">Página Inicial</h1>
+        <button className="home-button" onClick={navigateToContato}>Ir para Contato</button>
+        <Link to="/contato" className="home-link">Ir para Contato (Link)</Link>
+      </div>
     </div>
   );
 };

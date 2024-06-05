@@ -1,25 +1,14 @@
-.home-container {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  .home-title {
-    font-size: 24px;
-    color: #333;
-  }
-  
-  .home-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  .home-button:hover {
-    background-color: #0056b3;
-  }
-  
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
